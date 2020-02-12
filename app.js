@@ -1,13 +1,9 @@
-const {sum, subtract, multiply, divide} = require('./helpers');
+const express = require('express');
 
-const http = require('http');
+const app = express();
 
-const server = http.createServer((req, res) => {
-    res.end('Hello world updated');
+app.get('/', (req, res) => {
+    res.send('hey whas up from express');
 });
 
-server.listen(3000);
-
-const total = divide(5,4);
-
-console.log('Total is '+total);
+app.listen(3000);
