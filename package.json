@@ -1,10 +1,12 @@
 {
-  "name": "node",
+  "name": "nodeapi",
   "version": "1.0.0",
-  "description": "Learning node js",
+  "description": "A Node JS API",
   "main": "app.js",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "mongoose": "^5.8.11",
     "nodemon": "^2.0.2"
   },
   "devDependencies": {},
@@ -13,12 +15,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adrianordp/node.git"
+    "url": "git+https://github.com/Adrianordp/node.git"
   },
+  "keywords": [
+    "node",
+    "api"
+  ],
   "author": "Adriano Rodrigues",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/adrianordp/node/issues"
+    "url": "https://github.com/Adrianordp/node/issues"
   },
-  "homepage": "https://github.com/adrianordp/node#readme"
+  "homepage": "https://github.com/Adrianordp/node#readme"
 }

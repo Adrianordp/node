@@ -1,13 +1,30 @@
-const fs = require('fs');
-const fileName = 'target.txt';
+const express = require('express');
+const app = express();
+const mongoose = require('mongoose');
+const morgan = require('morgan');
+const dotenv = require('dotenv');
+dotenv.config();
 
-const errHandler = (err) => console.log(err);
+mongoose.set('useUnifiedTopology', true);
+mongoose
+    .connect(
+        process.env.MONGO_URI,
+        { useNewUrlParser: true }
+    )
+    .then(() => console.log('DB Connected'));
 
-const dataHandler = (data) => console.log(data.toString());
-
-fs.readFile(fileName, (err, data) => {
-    if(err) errHandler(err);
-    dataHandler(data);
+mongoose.connection.on('error', err => {
+    console.log('DB connection error: '+err.message);
 });
 
-console.log('Node js async programming')
+
+const postRoutes = require('./routes/post')
+
+// middleware
+app.use(morgan('dev'));
+app.use("/", postRoutes);
+
+const port = process.env.PORT || 8080;
+app.listen(port,() => {
+    console.log('A node js API is listening on port: '+port)
+});
