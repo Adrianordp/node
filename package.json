@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Adrianordp/node/issues"
   },
-  "homepage": "https://github.com/Adrianordp/node#readme"
+  "homepage": "https://github.com/Adrianordp/node#readme",
+  "dependencies": {
+    "nodemon": "^2.0.2"
+  }
 }
