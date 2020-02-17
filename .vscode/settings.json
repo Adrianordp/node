@@ -1,0 +1,22 @@
+{
+    "workbench.colorCustomizations": {
+        "[Visual Studio Light]": {
+            "activityBar.background": "#ffffee",
+            "activityBar.activeBackground": "#eeeedd",
+            "activityBar.foreground": "#990000",
+            // "activityBar.inactiveForeground": "#eeabab",
+            "activityBar.activeBorder": "#ff0000",
+            "activityBar.activeFocusBorder": "#00ff00",
+            "activityBar.border": "#990000",
+            "activityBar.dropBackground": "#ff0000",
+            "activityBarBadge.background": "#770077",
+            "activityBarBadge.foreground": "#ffffff",
+            "titleBar.activeBackground": "#ff0000",
+            "statusBar.background": "#ffffee",
+            "statusBar.foreground": "#990000",
+            "statusBar.border": "#ff0000"
+        },
+    },
+    "workbench.preferredDarkColorTheme": "Visual Studio Light",
+    "workbench.colorTheme": "Visual Studio Light"
+}
